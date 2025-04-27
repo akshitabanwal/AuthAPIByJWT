@@ -18,17 +18,6 @@ This project is a simple implementation of authentication using JWT (JSON Web To
 - **dotenv**: Loads environment variables from `.env` files.
 - **Postgres (or other databases)**: Database for storing user information(local host)
 
- Table: users
-## sql command
-```sql
-  CREATE TABLE users (
-  id SERIAL PRIMARY KEY,       
-  name VARCHAR(100) NOT NULL,  
-  username VARCHAR(50) UNIQUE NOT NULL, 
-  password VARCHAR(255) NOT NULL,  
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
-  );.
-
 
 
 
@@ -64,3 +53,14 @@ Make sure you have the following installed:
    npm start
 
   The API will run on http://localhost:5000.
+
+ Table: users
+## sql command
+```sql
+  CREATE TABLE users (
+  id SERIAL PRIMARY KEY,       
+  name VARCHAR(100) NOT NULL,  
+  username VARCHAR(50) UNIQUE NOT NULL, 
+  password VARCHAR(255) NOT NULL,  
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
+  );.
