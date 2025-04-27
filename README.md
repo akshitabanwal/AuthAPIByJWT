@@ -50,11 +50,9 @@ Make sure you have the following installed:
    PG_PASSWORD=your_postgresql_password
    PG_PORT=5432
    PORT=5000
-5 .Start the server:
+5 .Start the server(The API will run on http://localhost:5000.):
    ```bash
     npm start
-
- Table: users
 
 ## sql command
     ```sql
@@ -66,5 +64,5 @@ Make sure you have the following installed:
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
     );
 
-The API will run on http://localhost:5000.
+
 
