@@ -38,17 +38,17 @@ Make sure you have the following installed:
     ```bash
       cd AuthAPIByJWT
 
- 3.Install dependencies:
+ 3. Install dependencies:
    ```bash
       npm install
 
- 4.Create a .env file in the root directory and add the following:
+ 4. Create a .env file in the root directory and add the following:
    ```env
    JWT_SECRET=your_jwt_secret_key
    DB_URI=mongodb://localhost:27017/authdb
    PORT=5000
 
- 5.Start the server:
+ 5. Start the server:
   ```bash
    npm start
 
