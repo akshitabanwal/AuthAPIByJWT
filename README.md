@@ -51,12 +51,8 @@ Make sure you have the following installed:
    PG_PORT=5432
    PORT=5000
 5 .Start the server:
-
    ```bash
-   npm start
-
-
-The API will run on http://localhost:5000.
+    npm start
 
  Table: users
 
@@ -68,4 +64,7 @@ The API will run on http://localhost:5000.
     username VARCHAR(50) UNIQUE NOT NULL, 
     password VARCHAR(255) NOT NULL,  
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
-    );.
+    );
+
+The API will run on http://localhost:5000.
+
