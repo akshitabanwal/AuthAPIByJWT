@@ -20,13 +20,14 @@ This project is a simple implementation of authentication using JWT (JSON Web To
 
  Table: users
 ## sql command
-CREATE TABLE users (
+```sql
+  CREATE TABLE users (
   id SERIAL PRIMARY KEY,       
   name VARCHAR(100) NOT NULL,  
   username VARCHAR(50) UNIQUE NOT NULL, 
   password VARCHAR(255) NOT NULL,  
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
-);.
+  );.
 
 ## Setup and Installation
 
@@ -42,22 +43,21 @@ Make sure you have the following installed:
    git clone https://github.com/akshitabanwal/AuthAPIByJWT.git
 
  2. Navigate to the project directory:
-
-```bash
-cd AuthAPIByJWT
+    ```bash
+      cd AuthAPIByJWT
 
 3.Install dependencies:
-```bash
-npm install
+   ```bash
+   npm install
 
 4.Create a .env file in the root directory and add the following:
-```env
-JWT_SECRET=your_jwt_secret_key
-DB_URI=mongodb://localhost:27017/authdb
-PORT=5000
+   ```env
+   JWT_SECRET=your_jwt_secret_key
+   DB_URI=mongodb://localhost:27017/authdb
+   PORT=5000
 
 5.Start the server:
-```bash
-npm start
+  ```bash
+   npm start
 
-The API will run on http://localhost:5000.
+  The API will run on http://localhost:5000.
