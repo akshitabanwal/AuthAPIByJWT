@@ -29,6 +29,9 @@ This project is a simple implementation of authentication using JWT (JSON Web To
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
   );.
 
+
+
+
 ## Setup and Installation
 
 ### Prerequisites
